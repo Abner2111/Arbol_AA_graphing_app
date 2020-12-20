@@ -9,17 +9,16 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    AATree tree=new AATree();;
-
+    AATree tree=new AATree();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        // Txtview contains the data for the node
         TextView nodeEditText = (TextView) findViewById(R.id.nodeEditText);
+
         Button viewTreeBtn = (Button) findViewById(R.id.viewTreeBtn);
         viewTreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
                 tree.remove(nodeData);
                 nodeEditText.setText(null);
-
             }
         });
 

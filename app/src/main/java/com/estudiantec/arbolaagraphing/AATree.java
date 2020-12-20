@@ -252,7 +252,7 @@ public class AATree
                     if (lista.get(i).getLeft() != null) {
                         lista.add(lista.get(i).getLeft());
                         subcodigo += ",";
-                        subcodigo += String.valueOf(lista.get(i).getLeft().element);
+                        subcodigo += String.valueOf(lista.get(i).getLeft().element)+"x"+String.valueOf(lista.get(i).getLevel());
                         top += 1;
                     } else {
                         lista.add(null);
@@ -264,7 +264,7 @@ public class AATree
                     if (lista.get(i).getRight() != null) {
                         lista.add(lista.get(i).getRight());
                         subcodigo += ",";
-                        subcodigo += String.valueOf(lista.get(i).getRight().element);
+                        subcodigo += String.valueOf(lista.get(i).getRight().element)+"x"+String.valueOf(lista.get(i).getLevel());
                         top += 1;
                     } else {
                         lista.add(null);
