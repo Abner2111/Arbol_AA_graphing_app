@@ -1,4 +1,6 @@
-package com.estudiantec.estructura;
+package com.estudiantec.arbolaagraphing;
+
+import com.estudiantec.arbolaagraphing.AANode;
 
 import java.util.LinkedList;
 

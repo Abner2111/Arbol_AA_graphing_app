@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TreeVisualizer">
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_margin="10sp"
         android:scrollbars="horizontal"
@@ -22,37 +22,18 @@
             android:layout_height="match_parent"
             android:paddingTop="50sp">
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton4"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/rootNodeBtn"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
+                android:layout_column="3"
                 android:clickable="false"
-                app:backgroundTint="#03A9F4"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
         </TableRow>
 
@@ -62,41 +43,23 @@
             android:layout_height="match_parent"
             android:paddingTop="50sp">
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton9"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/secondLevelNodeBtn1"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                android:layout_column="1"
+                android:clickable="false" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton13"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/secondLevelNodeBtn2"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
+                android:layout_column="5"
                 android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:srcCompat="?attr/actionBarItemBackground" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                />
+
 
         </TableRow>
 
@@ -106,51 +69,41 @@
             android:layout_height="match_parent"
             android:paddingTop="50sp">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton15"
-                android:layout_width="wrap_content"
+
+            <Button
+                android:id="@+id/thirdLevelNodeBtn1"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:rippleColor="#00FFFFFF"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                android:layout_column="0"
+                android:layout_marginEnd="16dp"
+                android:clickable="false" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton17"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/thirdLevelNodeBtn2"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                android:layout_column="2"
+                android:clickable="false" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton19"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/thirdLevelNodeBtn3"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                android:layout_column="4"
+                android:layout_marginEnd="8dp"
+                android:clickable="false" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton21"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/thirdLevelNodeBtn4"
+                android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                app:backgroundTint="#2196F3"
-                app:srcCompat="?attr/actionBarItemBackground" />
+                android:layout_column="6"
+                android:clickable="false" />
+
+
+
         </TableRow>
 
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

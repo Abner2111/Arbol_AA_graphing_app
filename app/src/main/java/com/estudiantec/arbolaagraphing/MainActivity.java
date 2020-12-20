@@ -8,24 +8,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.estudiantec.estructura.*;
-
 public class MainActivity extends AppCompatActivity {
 
-    AATree tree = new AATree();
-    TextView nodeEditText = (TextView) findViewById(R.id.nodeEditText);
+    AATree tree=new AATree();;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        TextView nodeEditText = (TextView) findViewById(R.id.nodeEditText);
         Button viewTreeBtn = (Button) findViewById(R.id.viewTreeBtn);
         viewTreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), TreeVisualizer.class);
-
+                startIntent.putExtra("com.estudiantec.arbolaagraph.codedtree",(String) tree.getTreeCode());
                 startActivity(startIntent);
             }
         });
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 int nodeData = Integer.parseInt(nodeEditText.getText().toString());
 
                 tree.insert(nodeData);
+                nodeEditText.setText(null);
             }
         });
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 int nodeData = Integer.parseInt(nodeEditText.getText().toString());
 
                 tree.remove(nodeData);
+                nodeEditText.setText(null);
 
             }
         });
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int nodeData = Integer.parseInt(nodeEditText.getText().toString());
                 tree.find(nodeData);
+                nodeEditText.setText(null);
             }
         });
     }

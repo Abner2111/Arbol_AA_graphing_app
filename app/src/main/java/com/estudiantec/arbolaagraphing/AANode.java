@@ -1,4 +1,4 @@
-package com.estudiantec.estructura;
+package com.estudiantec.arbolaagraphing;
 
 
 class AANode
